@@ -125,7 +125,7 @@ var EntityManager =
 	
 	
 	updateComponentMap: function(){
-		this.componentMap = {};//Clear everything...IS THIS A MEMORY LEAK?
+		this.componentMap = {};
 		
 		var keys = 	Object.keys(this.entityMap);
 		
@@ -154,7 +154,7 @@ var EntityManager =
 			this.removeComponent(entity,comps[i]);
 		}
 		
-		this.entityMap[entity] = null; //URGENT: DO I NEED TO GET RID OF ALL ITS ENTRIES AND SUB OBJECTS? PROLLY NOT!
+		this.entityMap[entity] = null;
 		delete this.entityMap[entity];		
 	},
 
